@@ -1,0 +1,40 @@
+# Remix-specific temporary files
+*.dbg.json
+*.tsbuildinfo
+
+# Node modules (if you added npm packages)
+node_modules/
+
+# Remix files
+contracts/artifacts
+
+# Hardhat artifacts (if used)
+artifacts/
+cache/
+typechain/
+coverage/
+
+# Remix backups and file history
+*.bak
+*.backup
+*.sol~ # auto-save backups
+
+# System/IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Compiled JSON files
+*.json
+!*.config.json  # allow config files if needed
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
