@@ -2,7 +2,8 @@
 pragma solidity ^0.8.0;
 
 contract BytesExample {
-    bytes public data;           // Dynamic binary data
+    bytes public data;   // dynamic binary data, not fixed size
+    bytes8 public dataFixed = 0x1234567890ffac00; // fixed size data
     bytes1[] public byteArray;   // Array of single-byte values
 
     // Store raw data as bytes: 0x12345678
@@ -26,5 +27,9 @@ contract BytesExample {
     // Get length of byteArray
     function getByteArrayLength() public view returns (uint, bytes1[] memory) {
         return (byteArray.length, byteArray);
+    }
+
+    function printBytes8() external view returns(bytes8) {
+        return dataFixed;
     }
 }
