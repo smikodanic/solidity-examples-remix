@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract ReferenceType_Array {
+contract ReferenceType_array {
     // Fixed-size array (compile-time determined length)
     uint[3] public fixedArray = [1, 2, 3];
     

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract ReferenceType_String {
+contract ReferenceType_string {
     string public name = string(abi.encodePacked(bytes4(0x4a6f686e))); // gives John
 
 

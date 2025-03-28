@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract ReferenceType_Bytes {
+contract ReferenceType_bytes {
     // Fixed-size bytes (length defined at compile time)
     bytes3 public fixedBytes = hex"112233"; // 3-byte array
 
