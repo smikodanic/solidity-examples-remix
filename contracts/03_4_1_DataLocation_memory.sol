@@ -17,7 +17,7 @@ contract DataLocation_memory_array {
     }
 
 
-    /* memory to memory assignement will create a reference */
+    /* memory to memory assigning will create a reference */
     function memoryArray2mem_ref() public pure returns(bool[] memory, bool[] memory) {
         bool[] memory arr = new bool[](3); // [false, false, false]
         arr[1] = true; // [false, true, false]
@@ -30,7 +30,7 @@ contract DataLocation_memory_array {
     }
 
 
-    /* storage array to memory assignement will create a copy */
+    /* storage array to memory assigning will create a copy */
     function storageArray2mem_copy() public view returns(bool[5] memory, bool[5] memory) {
         bool[5] memory arr_copy = arr_storage; // CREATES COPY
         arr_copy[1] = false; // THIS WILL NOT CHANGE arr_storage[1] !
@@ -39,7 +39,7 @@ contract DataLocation_memory_array {
     }
 
 
-    /* storage struct to memory assignement will create a copy */
+    /* storage struct to memory assigning will create a copy */
     function storageStruct2mem_copy() public view returns(User memory, User memory) {
         User memory user_copy = userA; // CREATES COPY
         user_copy.name = 'Peter'; // THIS WILL NOT CHANGE userA.name !
@@ -49,7 +49,7 @@ contract DataLocation_memory_array {
     }
 
 
-    /* calldata to memory assignement will also create a copy */
+    /* calldata to memory assigning will also create a copy */
     // use [true, true] for arr_calldata during testing
     function calldataArray2mem_copy(bool[2] calldata arr_calldata) public pure returns(bool[2] memory, bool[2] memory) {
         bool[2] memory arr_copy = arr_calldata; // CREATES COPY

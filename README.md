@@ -7,3 +7,4 @@
 - [Solidity by Example](https://solidity-by-example.org/)
 - [Remix Docs](https://remix-ide.readthedocs.io/en/latest/)
 - [Remix IDE](https://remix.ethereum.org)
+- [Mastering Solidity - Examples](https://github.com/PacktPublishing/Mastering-Blockchain-Programming-with-Solidity)
