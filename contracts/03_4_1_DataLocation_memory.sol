@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract DataLocation_memory_array {
+contract DataLocation_memory {
     bool[5] internal arr_storage = [true, true, true, true, true];
 
     struct User {
